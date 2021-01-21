@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InterfazInicial">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#d8000000"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sisoseo"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="125dp"/>
+
+        <Button
+            android:id="@+id/btn_oseo"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="175dp"
+            android:layout_marginBottom="-60dp"
+            android:background="@drawable/btn_redondeado_white"
+            android:text="SISTEMA ÓSEO"
+            android:textColor="#403f3f"
+            android:textSize="16dp"
+            app:backgroundTint="#FFFFFF" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sisdigestivo"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="1dp"/>
+
+        <Button
+            android:id="@+id/btn_digestivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="-50dp"
+            android:background="@drawable/btn_redondeado_white"
+            android:text="SISTEMA DIGESTIVO"
+            android:textColor="#403f3f"
+            android:textSize="16dp"
+            app:backgroundTint="#FFFFFF" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/siscirculatorio"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="125dp"/>
+
+        <Button
+            android:id="@+id/btn_circulatorio"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="175dp"
+            android:layout_marginBottom="-100dp"
+            android:background="@drawable/btn_redondeado_white"
+            android:text="SISTEMA CIRCULATORIO"
+            android:textColor="#403f3f"
+            android:textSize="16dp"
+            app:backgroundTint="#FFFFFF" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sisrespiratorio"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="1dp"/>
+
+        <Button
+            android:id="@+id/btn_respiratorio"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/btn_redondeado_white"
+            android:text="SISTEMA RESPIRATORIO"
+            android:textColor="#403f3f"
+            android:textSize="16dp"
+            app:backgroundTint="#FFFFFF" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

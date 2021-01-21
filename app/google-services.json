@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "355163921283",
+    "project_id": "cuerpo-humano-fd4d6",
+    "storage_bucket": "cuerpo-humano-fd4d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355163921283:android:6ae332a3a07eaf7abc74b6",
+        "android_client_info": {
+          "package_name": "com.example.cuerpohumano"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "355163921283-qgudpco786ub8rpgpfgi7i7amil01em6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgl8sBVQC2ZwO8qOgzIaUK-t4wqVogNlY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "355163921283-qgudpco786ub8rpgpfgi7i7amil01em6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
