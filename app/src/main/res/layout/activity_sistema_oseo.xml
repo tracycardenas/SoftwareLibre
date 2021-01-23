@@ -1,9 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SistemaOseo">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#d8000000"
+        android:gravity="center"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:layout_width="289dp"
+            android:layout_height="280dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/san_fernando" />
+
+        <Button
+            android:id="@+id/simular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_redondeado_white"
+            android:elevation="5dp"
+            android:text="ACTIVAR SIMULACIÓN"
+            android:textColor="#ffff"
+            android:textSize="16dp"
+            app:backgroundTint="#0F3A74" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/alimentos"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/btn_redondeado_white"
+            android:elevation="5dp"
+            android:text="Alimentos"
+            android:textColor="#ffff"
+            android:textSize="16dp"
+            app:backgroundTint="#41BA84" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="140dp">
+            <RadioButton
+                android:id="@+id/Opcionfruta"
+                android:layout_width="wrap_content"
+                android:layout_height="31dp"
+                android:text="Frutas"
+                android:textColor="#fff"
+                android:textSize="17dp" />
+
+            <RadioButton
+                android:id="@+id/lacteos"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Lácteos"
+                android:textColor="#fff"
+                android:textSize="17dp" />
+
+            <RadioButton
+                android:id="@+id/carnes"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Carne"
+                android:textColor="#fff"
+                android:textSize="17dp" />
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/frecuencia"
+            android:layout_marginVertical="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginRight="120dp"
+
+            android:background="@drawable/btn_redondeado_white"
+            android:elevation="5dp"
+            android:text="Frecuencia"
+            android:textColor="#ffff"
+            android:textSize="16dp"
+            app:backgroundTint="#41BA84" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp">
+
+            <RadioButton
+                android:id="@+id/todoslosdias"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginRight="125dp"
+                android:text="Todos los dias"
+                android:textColor="#fff"
+                android:textSize="17dp" />
+
+            <RadioButton
+                android:id="@+id/unavez"
+                android:layout_width="wrap_content"
+                android:layout_height="31dp"
+                android:layout_marginRight="100dp"
+                android:text="Una vez a la semana"
+                android:textColor="#fff"
+                android:textSize="17dp" />
+
+            <RadioButton
+                android:id="@+id/tresveces"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginRight="90dp"
+                android:text="Tres veces por semana"
+                android:textColor="#fff"
+                android:textSize="17dp" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
