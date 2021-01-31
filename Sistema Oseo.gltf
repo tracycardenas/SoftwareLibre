@@ -1,0 +1,325 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.4.40",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                4,
+                6
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Light",
+            "rotation" : [
+                0.16907575726509094,
+                0.7558803558349609,
+                -0.27217137813568115,
+                0.570947527885437
+            ],
+            "translation" : [
+                5.508847236633301,
+                6.600937366485596,
+                -14.1572847366333
+            ]
+        },
+        {
+            "name" : "Camera",
+            "rotation" : [
+                0.483536034822464,
+                0.33687159419059753,
+                -0.20870360732078552,
+                0.7804827094078064
+            ],
+            "translation" : [
+                8.79149341583252,
+                5.655384540557861,
+                -6.226039886474609
+            ]
+        },
+        {
+            "name" : "root",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "scale" : [
+                0.009999999776482582,
+                0.009999999776482582,
+                0.009999999776482582
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "node_id30",
+            "rotation" : [
+                -0.0009495016420260072,
+                0.007475057616829872,
+                -0.0018892717780545354,
+                -0.9999698400497437
+            ],
+            "scale" : [
+                39.80547332763672,
+                39.80547332763672,
+                39.80547332763672
+            ],
+            "translation" : [
+                0.000311351555865258,
+                0.24405598640441895,
+                0.25600025057792664
+            ]
+        },
+        {
+            "children" : [
+                3
+            ],
+            "name" : "root.001",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "scale" : [
+                0.009999999776482582,
+                0.009999999776482582,
+                0.009999999776482582
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "node_id30.001",
+            "scale" : [
+                0.020729584619402885,
+                0.020729584619402885,
+                0.020729584619402885
+            ],
+            "translation" : [
+                0.0012241103686392307,
+                0.28044599294662476,
+                0.256000280380249
+            ]
+        },
+        {
+            "children" : [
+                5
+            ],
+            "name" : "root.002",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "scale" : [
+                0.009999999776482582,
+                0.009999999776482582,
+                0.009999999776482582
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Blanco",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.8017635941505432,
+                    0.4773573875427246,
+                    0.1299186497926712,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material_52",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0,
+                    "texCoord" : 0
+                },
+                "roughnessFactor" : 0
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "mesh_id31.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "mesh_id31",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "5",
+            "uri" : "5.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 59696,
+            "max" : [
+                3.368908405303955,
+                2.71187686920166,
+                0
+            ],
+            "min" : [
+                -3.400710105895996,
+                -1.491803526878357,
+                -26.150178909301758
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 59696,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 59696,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 299397,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 8242,
+            "max" : [
+                7.31804084777832,
+                5.983739376068115,
+                0
+            ],
+            "min" : [
+                -7.436141014099121,
+                -8.342395782470703,
+                -24.69900131225586
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 8242,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 8242,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 44937,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 716352,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 716352,
+            "byteOffset" : 716352
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 477568,
+            "byteOffset" : 1432704
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 598794,
+            "byteOffset" : 1910272
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 98904,
+            "byteOffset" : 2509068
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 98904,
+            "byteOffset" : 2607972
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 65936,
+            "byteOffset" : 2706876
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 89874,
+            "byteOffset" : 2772812
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9986
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 2862688,
+            "uri" : "Sistema Oseo.bin"
+        }
+    ]
+}
