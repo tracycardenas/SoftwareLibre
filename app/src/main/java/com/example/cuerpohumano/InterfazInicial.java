@@ -22,6 +22,15 @@ public class InterfazInicial extends AppCompatActivity {
                 startActivity(new Intent(InterfazInicial.this,SistemaOseo.class));
             }
         });
+
+        btn_circulatorio = findViewById(R.id.btn_circulatorio);
+        btn_circulatorio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(InterfazInicial.this,Prueba.class));
+
+            }
+        });
     }
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {

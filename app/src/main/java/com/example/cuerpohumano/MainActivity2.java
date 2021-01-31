@@ -37,7 +37,7 @@ public class MainActivity2 extends AppCompatActivity implements LoginInterface.V
                 startActivity(new Intent(MainActivity2.this,InterfazInicial.class));
                 Toast.makeText(MainActivity2.this,"BIENVENIDO", Toast.LENGTH_SHORT).show();
                 //aqui base de datos
-                handleLogin();
+                //handleLogin();
             }
         });
 
