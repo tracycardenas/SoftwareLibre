@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SistemaCirculatorio">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#d8000000"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/simular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_redondeado_white"
+            android:elevation="5dp"
+            android:text="SISTEMA CIRCULATORIO"
+            android:textColor="#000000"
+            android:textSize="26dp"
+            app:backgroundTint="@color/white" />
+
+
+        <Button
+            android:id="@+id/alimentos"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/btn_redondeado_white"
+            android:elevation="5dp"
+            android:text="Causas"
+            android:textColor="#ffff"
+            android:textSize="16dp"
+            app:backgroundTint="#41BA84" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="191dp">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp">
+
+
+                <RadioButton
+                    android:id="@+id/colesterol"
+                    android:layout_width="293dp"
+                    android:layout_height="31dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_x="6dp"
+                    android:layout_y="112dp"
+                    android:text="Colesterol alto"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/tabquismo"
+                    android:layout_width="341dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Tabaquismo y otras fuentes de tabaco"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/diabetes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Diabetes"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/inflamacion"
+                    android:layout_width="350dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Inflamación producida por la atritis"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+
+                <RadioButton
+                    android:id="@+id/problemas"
+                    android:layout_width="215dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Problemas Renales"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/tumores"
+                    android:layout_width="352dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Tumores de la glándula suprarrenal"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/problemastiro"
+                    android:layout_width="342dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Problemas de tiroides"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/medicamentos"
+                    android:layout_width="355dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Medicamentos como: pastillas anticonceptivas o antigripales"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/drogas"
+                    android:layout_width="354dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Drogas ilícitas, como la cocaína y las anfetaminas"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/obstruccion"
+                    android:layout_width="354dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Obstrucción de las arterias coronarias"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/coagulo"
+                    android:layout_width="354dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Coágulos de sangre"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/enfermedades"
+                    android:layout_width="359dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Enfermedades crónicas de corazón"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/ruptura"
+                    android:layout_width="359dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Ruptura de vaso sanguíneo"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+                <RadioButton
+                    android:id="@+id/ataque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Ataque cardiaco"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/presion"
+                    android:layout_width="348dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Presión arterial alta"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/infeccion"
+                    android:layout_width="352dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Infección por coronavirus"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/sarampion"
+                    android:layout_width="357dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Sarampión"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+                <RadioButton
+                    android:id="@+id/oido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Infecciones de oído"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+                <RadioButton
+                    android:id="@+id/diente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Infección de diente"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+                <RadioButton
+                    android:id="@+id/celulitis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Celulitis"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+        </ScrollView>
+        <Button
+            android:id="@+id/mostrar"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginRight="20dp"
+            android:layout_x="68dp"
+            android:layout_y="200dp"
+            android:text="VER ENFERMEDADES"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            app:backgroundTint="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/siguiente"
+            android:layout_width="51dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="20dp"
+            android:layout_x="68dp"
+            android:layout_y="200dp"
+            android:text=">>"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            app:backgroundTint="@android:color/darker_gray" />
+
+
+        <AbsoluteLayout
+            android:layout_width="370dp"
+            android:layout_height="287dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="149dp"
+                android:layout_height="188dp"
+                android:layout_x="-12dp"
+                android:layout_y="100dp"
+                app:srcCompat="@drawable/circulatorio" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="148dp"
+                android:layout_height="280dp"
+                android:layout_x="224dp"
+                android:layout_y="35dp"
+                app:srcCompat="@drawable/circulatorio" />
+
+            <ImageView
+                android:id="@+id/imtexto"
+                android:layout_width="165dp"
+                android:layout_height="215dp"
+                android:layout_x="96dp"
+                android:layout_y="4dp"
+                app:srcCompat="@drawable/circulatorio" />
+
+
+        </AbsoluteLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

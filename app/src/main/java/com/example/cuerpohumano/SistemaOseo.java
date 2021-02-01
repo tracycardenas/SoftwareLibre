@@ -22,7 +22,6 @@ import android.widget.RadioButton;
 public class SistemaOseo extends AppCompatActivity {
 
     Button siguiente, mostrar;
-    boolean calcios= false;
     ScaleGestureDetector detector;
     float xBegin =0;
     float yBegin = 0;
@@ -162,16 +161,12 @@ public class SistemaOseo extends AppCompatActivity {
 
                 }
 
-                if(calcio.isChecked()==true|| alimentacion.isChecked()==true || cirugias.isChecked()==true || esteroides.isChecked()==true || sedentario.isChecked()==true || alcohol.isChecked()==true){
+                if( alimentacion.isChecked()==true || esteroides.isChecked()==true || sedentario.isChecked()==true || alcohol.isChecked()==true){
                     imtexto.setImageResource(R.drawable.osteoporosisconc);
                     imageView2.setImageResource(R.drawable.osteoporosisi);
                     imageView.setImageResource(R.drawable.osteoporosis2);
                 }
-                if (hereditarios.isChecked()==true || calcio.isChecked()==true){
-                    imageView.setImageResource(R.drawable.canceroseo);
-                    imtexto.setImageResource(R.drawable.canceroseoc);
-                    imageView2.setImageResource(R.drawable.canceroseo2);
-                }
+
                 if ( obesidad.isChecked()==true ){
                     imageView.setImageResource(R.drawable.artritis);
                     imageView2.setImageResource(R.drawable.artritis2);
@@ -191,6 +186,12 @@ public class SistemaOseo extends AppCompatActivity {
                     imageView.setImageResource(R.drawable.raquitismo);
                     imageView2.setImageResource(R.drawable.raquitismo2);
                     imtexto.setImageResource(R.drawable.raquitismocon);
+                }
+
+                if (prematuro.isChecked()==true || crecimiento.isChecked() == true || diabetes.isChecked()==true || obesidad.isChecked()== true
+                || alimentacion.isChecked()==true
+                        || esteroides.isChecked()==true || sedentario.isChecked()==true || alcohol.isChecked()==true ) {
+                    siguiente.setVisibility(View.INVISIBLE);
                 }
 
             }

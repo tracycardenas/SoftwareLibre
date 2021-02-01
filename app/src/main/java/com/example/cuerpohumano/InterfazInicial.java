@@ -27,7 +27,7 @@ public class InterfazInicial extends AppCompatActivity {
         btn_circulatorio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(InterfazInicial.this,Prueba.class));
+                startActivity(new Intent(InterfazInicial.this,SistemaCirculatorio.class));
 
             }
         });
