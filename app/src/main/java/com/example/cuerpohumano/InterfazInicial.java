@@ -39,6 +39,14 @@ public class InterfazInicial extends AppCompatActivity {
                 startActivity(new Intent(InterfazInicial.this,SistemaRespiratorio.class));
             }
         });
+
+        btn_digestivo = findViewById(R.id.btn_digestivo);
+        btn_digestivo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(InterfazInicial.this,SistemaDigestivo.class));
+            }
+        });
     }
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
