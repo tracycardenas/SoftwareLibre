@@ -49,7 +49,6 @@ public class SistemaRespiratorio extends AppCompatActivity {
         xBegin = imtexto.getScaleX();
         yBegin =imtexto.getScaleY();
         detector = new ScaleGestureDetector(this,new ScaleListener(imtexto));
-        siguiente.setVisibility(View.INVISIBLE);
         mostrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -152,8 +151,11 @@ public class SistemaRespiratorio extends AppCompatActivity {
                     imtexto.setImageResource(R.drawable.mediastinitiscon);
                 }
 
-
-
+                if (cambios.isChecked()==true|| marihuana.isChecked()==true || contaminacion.isChecked()==true || neumonia.isChecked()==true
+                       || infecciones.isChecked()==true || alergias.isChecked()==true || exposicional.isChecked()==true || radioterapia.isChecked()==true
+                            || vasos.isChecked()==true || ampollas.isChecked()==true || ventilacion.isChecked()==true || vomito.isChecked()==true || tuberculosis.isChecked()==true ){
+                    siguiente.setVisibility(View.INVISIBLE);
+                }
 
 
 

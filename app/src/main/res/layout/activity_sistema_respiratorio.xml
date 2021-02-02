@@ -150,7 +150,7 @@
 
                 <RadioButton
                     android:id="@+id/infecciones"
-                    android:layout_width="wrap_content"
+                    android:layout_width="354dp"
                     android:layout_height="32dp"
                     android:layout_marginRight="125dp"
                     android:layout_x="4dp"
@@ -158,9 +158,10 @@
                     android:text="Infecciones de las vías respiratorias"
                     android:textColor="#fff"
                     android:textSize="17dp" />
+
                 <RadioButton
                     android:id="@+id/alergias"
-                    android:layout_width="wrap_content"
+                    android:layout_width="354dp"
                     android:layout_height="32dp"
                     android:layout_marginRight="125dp"
                     android:layout_x="4dp"
@@ -168,10 +169,11 @@
                     android:text="Alergias como la fiebre del heno"
                     android:textColor="#fff"
                     android:textSize="17dp" />
+
                 <RadioButton
                     android:id="@+id/exposicion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="32dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
                     android:layout_marginRight="125dp"
                     android:layout_x="4dp"
                     android:layout_y="70dp"
@@ -192,7 +194,7 @@
 
                 <RadioButton
                     android:id="@+id/vasos"
-                    android:layout_width="wrap_content"
+                    android:layout_width="335dp"
                     android:layout_height="32dp"
                     android:layout_marginRight="125dp"
                     android:layout_x="4dp"
