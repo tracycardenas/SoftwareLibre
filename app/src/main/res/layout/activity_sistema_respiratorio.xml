@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/btn_redondeado_white"
             android:elevation="5dp"
             android:text="SISTEMA RESPIRATORIO"
@@ -57,81 +57,71 @@
                 android:layout_marginRight="40dp">
 
                 <RadioButton
-                    android:id="@+id/calcio"
+                    android:id="@+id/traumatismo"
                     android:layout_width="wrap_content"
                     android:layout_height="33dp"
                     android:layout_marginRight="90dp"
                     android:layout_x="5dp"
                     android:layout_y="155dp"
-                    android:text="Bajo consumo de calcio"
+                    android:text="Traumatismo nasal"
                     android:textColor="#fff"
                     android:textSize="17dp" />
 
                 <RadioButton
-                    android:id="@+id/alimentacion"
+                    android:id="@+id/desviacion"
                     android:layout_width="293dp"
                     android:layout_height="31dp"
                     android:layout_marginRight="100dp"
                     android:layout_x="6dp"
                     android:layout_y="112dp"
-                    android:text="Transtornos de alimentación"
+                    android:text="Desviación del tabique nasal"
                     android:textColor="#fff"
                     android:textSize="17dp" />
 
                 <RadioButton
-                    android:id="@+id/cirugias"
-                    android:layout_width="wrap_content"
-                    android:layout_height="32dp"
-                    android:layout_marginRight="125dp"
-                    android:layout_x="4dp"
-                    android:layout_y="70dp"
-                    android:text="Cirugías"
-                    android:textColor="#fff"
-                    android:textSize="17dp" />
-
-                <RadioButton
-                    android:id="@+id/esteroides"
-                    android:layout_width="wrap_content"
-                    android:layout_height="32dp"
-                    android:layout_marginRight="125dp"
-                    android:layout_x="4dp"
-                    android:layout_y="70dp"
-                    android:text="Uso de esteroides"
-                    android:textColor="#fff"
-                    android:textSize="17dp" />
-
-                <RadioButton
-                    android:id="@+id/sedentario"
+                    android:id="@+id/cambios"
                     android:layout_width="287dp"
                     android:layout_height="32dp"
                     android:layout_marginRight="125dp"
                     android:layout_x="4dp"
                     android:layout_y="70dp"
-                    android:text="Estilo de vida sedentario"
+                    android:text="Cambios bruscos de altura"
                     android:textColor="#fff"
                     android:textSize="17dp" />
 
                 <RadioButton
-                    android:id="@+id/alcohol"
+                    android:id="@+id/humo"
                     android:layout_width="372dp"
                     android:layout_height="32dp"
                     android:layout_marginRight="125dp"
                     android:layout_x="4dp"
                     android:layout_y="70dp"
-                    android:text="Consumo excesivo de alcohol y tabaco"
+                    android:text="Humo de tabaco"
                     android:textColor="#fff"
                     android:textSize="17dp" />
 
                 <RadioButton
-                    android:id="@+id/hereditarios"
+                    android:id="@+id/marihuana"
                     android:layout_width="215dp"
                     android:layout_height="32dp"
                     android:layout_marginRight="125dp"
                     android:layout_x="4dp"
                     android:layout_y="70dp"
-                    android:text="Factores hereditarios"
+                    android:text="Humo de marihuana"
                     android:textColor="#fff"
                     android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/contaminacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Contaminación atmosférica"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
 
                 <RadioButton
                     android:id="@+id/lesiones"
@@ -140,62 +130,114 @@
                     android:layout_marginRight="125dp"
                     android:layout_x="4dp"
                     android:layout_y="70dp"
-                    android:text="Lesión articular previa"
+                    android:text="Lesiones"
                     android:textColor="#fff"
                     android:textSize="17dp" />
 
+
+
                 <RadioButton
-                    android:id="@+id/obesidad"
+                    android:id="@+id/neumonia"
                     android:layout_width="wrap_content"
                     android:layout_height="32dp"
                     android:layout_marginRight="125dp"
                     android:layout_x="4dp"
                     android:layout_y="70dp"
-                    android:text="Obesidad"
+                    android:text="Neumonía"
                     android:textColor="#fff"
                     android:textSize="17dp" />
 
+
                 <RadioButton
-                    android:id="@+id/diabetes"
+                    android:id="@+id/infecciones"
                     android:layout_width="wrap_content"
                     android:layout_height="32dp"
                     android:layout_marginRight="125dp"
                     android:layout_x="4dp"
                     android:layout_y="70dp"
-                    android:text="Diabetes mal controlada"
+                    android:text="Infecciones de las vías respiratorias"
                     android:textColor="#fff"
                     android:textSize="17dp" />
-
                 <RadioButton
-                    android:id="@+id/vitaminaD"
+                    android:id="@+id/alergias"
                     android:layout_width="wrap_content"
                     android:layout_height="32dp"
                     android:layout_marginRight="125dp"
                     android:layout_x="4dp"
                     android:layout_y="70dp"
-                    android:text="Deficiencia de vitamina D"
+                    android:text="Alergias como la fiebre del heno"
                     android:textColor="#fff"
                     android:textSize="17dp" />
-
                 <RadioButton
-                    android:id="@+id/crecimiento"
+                    android:id="@+id/exposicion"
                     android:layout_width="wrap_content"
                     android:layout_height="32dp"
                     android:layout_marginRight="125dp"
                     android:layout_x="4dp"
                     android:layout_y="70dp"
-                    android:text="Producción excesiva de la hormona de crecimiento"
+                    android:text="Exposición al humo de otros fumadores"
                     android:textColor="#fff"
                     android:textSize="17dp" />
-
                 <RadioButton
-                    android:id="@+id/prematuro"
+                    android:id="@+id/radioterapia"
                     android:layout_width="wrap_content"
                     android:layout_height="32dp"
                     android:layout_marginRight="125dp"
                     android:layout_x="4dp"
                     android:layout_y="70dp"
-                    android:text="Nacimiento prematuro"
+                    android:text="Radioterapia"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+
+                <RadioButton
+                    android:id="@+id/vasos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Vasos sanguíneos bloqueados"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+                <RadioButton
+                    android:id="@+id/ampollas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Ampollas de aire rotas"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+                <RadioButton
+                    android:id="@+id/ventilacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Ventilación mecánica"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+                <RadioButton
+                    android:id="@+id/vomito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Vómito constante o forzado"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+                <RadioButton
+                    android:id="@+id/tuberculosis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Tuberculosis"
                     android:textColor="#fff"
                     android:textSize="17dp" />
 
@@ -237,7 +279,7 @@
                 android:layout_height="188dp"
                 android:layout_x="-12dp"
                 android:layout_y="100dp"
-                app:srcCompat="@drawable/respiratorio" />
+                app:srcCompat="@drawable/respiratorio"/>
 
             <ImageView
                 android:id="@+id/image1"
@@ -245,23 +287,18 @@
                 android:layout_height="280dp"
                 android:layout_x="224dp"
                 android:layout_y="35dp"
-                app:srcCompat="@drawable/respiratorio" />
+                app:srcCompat="@drawable/respiratorio"/>
 
             <ImageView
                 android:id="@+id/imtexto"
-                android:layout_width="149dp"
-                android:layout_height="188dp"
-                android:layout_x="96dp"
-                android:layout_y="31dp"
+                android:layout_width="195dp"
+                android:layout_height="219dp"
+                android:layout_x="77dp"
+                android:layout_y="0dp"
                 app:srcCompat="@drawable/respiratorio" />
 
 
         </AbsoluteLayout>
-
-
-
-
-
 
     </LinearLayout>
 

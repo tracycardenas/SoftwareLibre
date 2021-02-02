@@ -4,22 +4,313 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Prueba">
-
-    <fragment
+    tools:context=".SistemaRespiratorio">
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/arFragment"
-        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:src="@drawable/fondo"
+        android:scaleType="centerCrop"
         />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/downloadBtn"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="24dp"
-        android:text="Download"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#d8000000"
+        android:gravity="center"
+        android:layout_height="match_parent">
 
+
+        <Button
+            android:id="@+id/simular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_redondeado_white"
+            android:elevation="5dp"
+            android:text="SISTEMA RESPIRATORIO"
+            android:textColor="#000000"
+            android:textSize="26dp"
+            app:backgroundTint="@color/white" />
+
+
+        <Button
+            android:id="@+id/alimentos"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/btn_redondeado_white"
+            android:elevation="5dp"
+            android:text="Causas"
+            android:textColor="#ffff"
+            android:textSize="16dp"
+            app:backgroundTint="#41BA84" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="191dp">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp">
+
+                <RadioButton
+                    android:id="@+id/traumatismo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:layout_marginRight="90dp"
+                    android:layout_x="5dp"
+                    android:layout_y="155dp"
+                    android:text="Traumatismo nasal"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/desviacion"
+                    android:layout_width="293dp"
+                    android:layout_height="31dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_x="6dp"
+                    android:layout_y="112dp"
+                    android:text="Desviación del tabique nasal"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/malformacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Malformación en el tabique"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/cambios"
+                    android:layout_width="287dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Cambios bruscos de altura"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/humo"
+                    android:layout_width="372dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Humo de tabaco"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/marihuana"
+                    android:layout_width="215dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Humo de marihuana"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/contaminacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Contaminación atmosférica"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+
+                <RadioButton
+                    android:id="@+id/lesiones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Lesiones"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+
+
+                <RadioButton
+                    android:id="@+id/neumonia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Neumonía"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+
+                <RadioButton
+                    android:id="@+id/infecciones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Infecciones de las vías respiratorias"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+                <RadioButton
+                    android:id="@+id/alergias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Alergias como la fiebre del heno"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+                <RadioButton
+                    android:id="@+id/exposicion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Exposición al humo de otros fumadores"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+                <RadioButton
+                    android:id="@+id/radioterapia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Radioterapia"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+
+                <RadioButton
+                    android:id="@+id/vasos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Vasos sanguíneos bloqueados"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+                <RadioButton
+                    android:id="@+id/ampollas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Ampollas de aire rotas"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+                <RadioButton
+                    android:id="@+id/ventilacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Ventilación mecánica"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+                <RadioButton
+                    android:id="@+id/vomito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Vómito constante o forzado"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+                <RadioButton
+                    android:id="@+id/tuberculosis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="125dp"
+                    android:layout_x="4dp"
+                    android:layout_y="70dp"
+                    android:text="Tuberculosis"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+        </ScrollView>
+        <Button
+            android:id="@+id/mostrar"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginRight="20dp"
+            android:layout_x="68dp"
+            android:layout_y="200dp"
+            android:text="VER ENFERMEDADES"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            app:backgroundTint="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/siguiente"
+            android:layout_width="51dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="20dp"
+            android:layout_x="68dp"
+            android:layout_y="200dp"
+            android:text=">>"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            app:backgroundTint="@android:color/darker_gray" />
+
+
+        <AbsoluteLayout
+            android:layout_width="370dp"
+            android:layout_height="287dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="149dp"
+                android:layout_height="188dp"
+                android:layout_x="-12dp"
+                android:layout_y="100dp"/>
+            //app:srcCompat="@drawable/respiratorio"*
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="148dp"
+                android:layout_height="280dp"
+                android:layout_x="224dp"
+                android:layout_y="35dp"/>
+            //app:srcCompat="@drawable/respiratorio"
+
+            <ImageView
+                android:id="@+id/imtexto"
+                android:layout_width="195dp"
+                android:layout_height="219dp"
+                android:layout_x="77dp"
+                android:layout_y="0dp"
+                app:srcCompat="@drawable/respiratorio" />
+
+
+        </AbsoluteLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>

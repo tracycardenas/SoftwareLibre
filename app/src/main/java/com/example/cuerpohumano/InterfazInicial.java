@@ -31,6 +31,14 @@ public class InterfazInicial extends AppCompatActivity {
 
             }
         });
+
+        btn_respiratorio = findViewById(R.id.btn_respiratorio);
+        btn_respiratorio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(InterfazInicial.this,SistemaRespiratorio.class));
+            }
+        });
     }
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {

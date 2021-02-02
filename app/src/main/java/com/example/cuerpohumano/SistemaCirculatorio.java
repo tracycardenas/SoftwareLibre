@@ -15,7 +15,7 @@ import android.widget.RadioButton;
 public class SistemaCirculatorio extends AppCompatActivity {
 
     RadioButton presion, colesterol, tabaquismo, diabetes, inflamacion,apnea,problemas,tumores,problemasti,medicamentos,drogas,
-    obstruccion, coagulo, enfermedades, ruptura,ataque, infeccion,sarampion,oido,diente,celulitis;
+    obstruccion, enfermedades, ruptura,ataque, infeccion,sarampion,oido,diente,celulitis;
     Button mostrar, siguiente;
     ScaleGestureDetector detector;
     float xBegin =0;

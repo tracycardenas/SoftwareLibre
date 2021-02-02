@@ -26,41 +26,11 @@ public class Prueba extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prueba);
-        ArFragment arFragment = (ArFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.arFragment);
-
-        FirebaseApp.initializeApp(this);
-        FirebaseStorage storage = FirebaseStorage.getInstance();
-        StorageReference modelRef = storage.getReference().child("out.glb");
-        findViewById(R.id.downloadBtn).setOnClickListener(v -> {
-
-            try {
-                File file = File.createTempFile("out","glb");
-                modelRef.getFile(file).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
-                    @Override
-                    public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-                        buildModel(file);
-                    }
-                });
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
 
 
-        });
-        arFragment.setOnTapArPlaneListener((hitResult, plane, motionEvent) -> {
-            AnchorNode anchorNode = new AnchorNode(hitResult.createAnchor());
-            arFragment.getArSceneView().getScene().addChild(anchorNode);
-        });
-    }
-    private ModelRenderable renderable;
-    private void buildModel(File file) {
 
-        RenderableSource renderableSource = RenderableSource
-                .builder()
-                .setSource(this, Uri.parse(file.getPath()), RenderableSource.SourceType.GLB)
-                .setRecenterMode(RenderableSource.RecenterMode.ROOT)
-                .build();
 
     }
-}
+
+
+    }
